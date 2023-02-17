@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: IBM Plex Sans;
+  background-image: url(./assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right -170px top -160px;
+  background-color: #f2f2f2;
+}
+header {
+  margin: 25px;
+  margin-top: 40px;
+}
+.header-pattern {
+  display: none;
+}
+.logo-footer-desktop {
+  display: none;
+}
+h1 {
+  color: #191826;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+p {
+  color: #191826;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.container {
+  margin-top: 160px;
+  background-color: #191826;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+.illustation {
+  width: 208.97px;
+  height: 430;
+  position: absolute;
+  top: -10%;
+}
+.main-information {
+  background-color: #fa7453;
+  max-width: 400px;
+  padding: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 12px;
+  position: absolute;
+  bottom: -60%;
+  display: flex;
+  flex-direction: column;
+}
+h2,
+div.main-information p,
+.price {
+  color: #fcfaf9;
+}
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 13px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+a {
+  font-weight: 700;
+  font-size: 65px;
+}
+span {
+  font-size: 20px;
+  font-weight: 400;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button-span {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.ios-button {
+  background-color: #191826;
+  color: #fcfaf9;
+  height: 61px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 16px;
+}
+.ios-button:hover {
+  background-color: #66e2dc;
+}
+.android-button {
+  background-color: #fcfaf9;
+  color: #191826;
+  height: 61px;
+  border-radius: 12px;
+  border: none;
+}
+.android-button:hover {
+  background-color: #ffb964;
+}
+footer {
+  margin-top: 400px;
+  padding: 25px;
+}
+.footer-information {
+  margin-top: 30px;
+}
+.social-networks {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+.social-network-icons {
+  cursor: pointer;
+  fill: #191826;
+}
+.social-network-icons:hover {
+  fill: #fa7453;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    margin: 7%;
+    background-image: url(./assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right -100px top -300px;
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .header-pattern {
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    right: 0px;
+  }
+  .header-information {
+    max-width: 55%;
+  }
+  .illustation {
+    top: -10%;
+    left: 10%;
+  }
+  .main-information {
+    bottom: -15%;
+    right: 10%;
+  }
+  footer {
+    margin-top: 180px;
+  }
+  .footer-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-information {
+    max-width: 370px;
+  }
+  .footer-information p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right -100px top -300px;
+  }
+  h1 {
+    font-size: 88px;
+    line-height: 88px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .footer-information p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .header-information {
+    max-width: 75%;
+  }
+  .logo-footer-mobile {
+    display: none;
+  }
+  .logo-footer-desktop {
+    display: inline-block;
+  }
+}
