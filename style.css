@@ -51,7 +51,7 @@ p {
 }
 .main-information {
   background-color: #fa7453;
-  max-width: 400px;
+  width: 375px;
   padding: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -139,7 +139,7 @@ footer {
   fill: #fa7453;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   body {
     margin: 7%;
     background-image: url(./assets/bg-main-tablet.png);
@@ -161,15 +161,22 @@ footer {
     right: 0px;
   }
   .header-information {
-    max-width: 55%;
+    max-width: 50%;
+  }
+  .container {
+    max-width: 1110px;
+    margin-top: 250px;
   }
   .illustation {
-    top: -10%;
+    width: 270px;
+    height: 556px;
+    top: -25%;
     left: 10%;
   }
   .main-information {
     bottom: -15%;
     right: 10%;
+    width: 400px;
   }
   footer {
     margin-top: 180px;
@@ -188,8 +195,10 @@ footer {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   body {
+    margin-left: 12%;
+    margin-right: 12%;
     background-image: url(./assets/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-position: right -100px top -300px;
@@ -201,6 +210,18 @@ footer {
   p {
     font-size: 20px;
     line-height: 34px;
+  }
+  .container {
+    margin: 0 auto;
+    margin-top: 350px;
+  }
+  .main-information {
+    width: 446px;
+    height: 625;
+  }
+  .illustation {
+    width: 280px;
+    height: 606px;
   }
   .footer-information p {
     font-size: 16px;
